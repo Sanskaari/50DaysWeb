@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.progress-container{
+    width: 30vb;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .progressBar{
+        position: absolute;
+        z-index: -2;
+        height: 1%;
+        width: 14%;
+        background-color: lightgray;
+        
+    }
+
+    .progressBar2{
+        position: absolute;
+        z-index: -1;
+        height: 1%;
+        width: 0%;
+        background-color: cornflowerblue;
+        transition: width 0.5s ease;
+    }
+
+    .circle{
+        border: solid lightgrey;
+        border-radius: 50%;
+        width: 15%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transition: border-color 0.5s ease;
+    }
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.circle.active{
+    border-color: cornflowerblue;
+}
+
+button{
+    padding: 10px;
+    border-radius: 25%;
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+}
