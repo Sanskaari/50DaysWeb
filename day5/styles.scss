@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    width: 100%; 
+    background-image: url("https://images.pexels.com/photos/1146708/pexels-photo-1146708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(30px);
+    transition: filter 3s ease;
+}
+
+.loading{
+    font-size: 100px;
+    color: black;
+    opacity: 1;
+    transition: opacity 3s ease-in;
+}
